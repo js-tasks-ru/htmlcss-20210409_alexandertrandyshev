@@ -1,1 +1,186 @@
+@import '../../assets/css/main.css';
+
 /* Стилизация кнопки */
+.button{
+    height: 451px;
+    width: 1440px;
+    background: var(--backgroundDefault);
+}
+
+.button__lable{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    color: var(--buttonLable);
+    float: left; 
+    padding-left: 163px;
+    padding-top: 150px;
+}
+
+.button__list{
+    display: inline-block; 
+    margin-left: 240px;
+    margin-top: 139px;
+}
+
+.button__listItem {
+    margin-bottom: 16px;
+    list-style-type: none;
+}
+
+.button__listItemDefault::before {
+    content:"DEFAULT";
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ACB5BD;
+    margin-right: 40px;
+}
+.button__listItemHover::before {
+    content:"hover";
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ACB5BD;
+    margin-right: 52px;
+}
+
+.button__listItemDisabled::before {
+    content:"Disabled";
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ACB5BD;
+    margin-right: 33px;
+}
+
+.button__listItem > button {
+    margin-right: 16px;
+}
+
+.button__primary{
+    cursor: pointer;
+    background-color: var(--primaryButtonColor);
+    border-radius: 8px;
+    height: 48px;
+    width: 182px;
+    border: 0px;
+    outline: none;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button__primaryText{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 19px;
+    width: 57px;
+    left: 63px;
+    top: 15px;
+}
+
+.button__primary:active{
+    background-color: var(--primaryButtonColorHover);
+}
+
+.button__primary_hover:hover{
+    background-color: var(--primaryButtonColorHover);
+}
+
+.button__primary_disabled:disabled{
+    background-color: var(--primaryButtonColor);
+    opacity: 0.5;
+    cursor: default;
+}
+
+.button__secondary{
+    cursor: pointer;
+    height: 48px;
+    width: 182px;
+    border-radius: 8px;
+    background: var(--secondaryButtonColor);
+    border: 0px;
+    outline: none;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button__secondaryText{
+    width: 76px;
+    height: 19px;
+    top: 15px;
+    left: 53px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.button__secondary:active{
+    background-color: var(--secondaryButtonColorHover);
+}
+
+.button__secondary_hover:hover{
+    background-color: var(--secondaryButtonColorHover);
+}
+
+.button__secondary_disabled:disabled{
+    background: var(--secondaryButtonColor);
+    opacity: 0.5;
+    cursor: default;
+}
+
+.button__altermate{
+    cursor: pointer;
+    height: 48px;
+    width: 182px;
+    border-radius: 8px;
+    border: 1px solid var(--altermateButtonBorderColor);
+    box-sizing: border-box;
+    background-color: transparent;
+    outline: none;
+    transition: opacity 200ms ease-in-out, border 200ms ease-in-out;
+}
+
+.button__altermateText{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #495057;
+}
+
+.button__altermate:active{
+    border: 1px solid var(--altermateButtonBorderColorHover);
+}
+
+.button__altermate_hover:hover{
+    border: 1px solid var(--altermateButtonBorderColorHover);
+}
+
+.button__altermate_disabled:disabled{
+    opacity: 0.5;
+    cursor: default;
+}

@@ -1,5 +1,24 @@
 @import '../fonts/fonts.css';
+:root {
+    --blue: #4263EB;
+    --blue2: #2342C0;
+    --black: #212429;
+    --purple: #7048E8;
+    --purple2: #5028C6;
+    --gray3: #ACB5BD;
 
+    --backgroundDefault: #FFFFFF;
+
+    --buttonLable: var(--black);
+    --primaryButtonColor: var(--blue);
+    --primaryButtonColorHover: var(--blue2);
+
+    --secondaryButtonColor: var(--purple);
+    --secondaryButtonColorHover: var(--purple2);
+
+    --altermateButtonBorderColor: var(--gray3);
+    --altermateButtonBorderColorHover: var(--black);
+  }
 * {
     font-family: 'Roboto', sans-serif;
 }
