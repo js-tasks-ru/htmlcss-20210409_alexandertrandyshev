@@ -11,6 +11,9 @@
 
     --backgroundDefault: var(--white);
 
+    --buttonTextColor: var(--white);
+    --buttonTextAltermateColor: var(--gray4);
+
     --buttonLable: var(--black);
     --primaryButtonColor: var(--blue);
     --primaryButtonColorHover: var(--blue2);
