@@ -1,1 +1,87 @@
 /* Стилизация кнопки */
+.button__lable{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    color: var(--buttonLable);
+}
+
+.button__listItem{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--gray3);
+}
+
+.button{
+    cursor: pointer;
+    border-radius: 8px;
+    height: 48px;
+    width: 182px;
+    border: 0px;
+    outline: none;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.button_primary{
+    background-color: var(--primaryButtonColor);
+}
+.button_primary:active{
+    background-color: var(--primaryButtonColorHover);
+}
+.button_primary:hover{
+    background-color: var(--primaryButtonColorHover);
+}
+.button_primary:disabled{
+    opacity: 0.5;
+}
+
+.button_secondary{
+    background: var(--secondaryButtonColor);
+}
+.button_secondary:active{
+    background-color: var(--secondaryButtonColorHover);
+}
+.button_secondary:hover{
+    background-color: var(--secondaryButtonColorHover);
+}
+.button_secondary:disabled{
+    opacity: 0.5;
+}
+
+.button_altermate{
+    border: 1px solid var(--altermateButtonBorderColor);
+    box-sizing: border-box;
+    background-color: transparent;
+    transition: opacity 200ms ease-in-out, border 200ms ease-in-out;
+}
+.button_altermate:active{
+    border: 1px solid var(--altermateButtonBorderColorHover);
+}
+.button_altermate:hover{
+    border: 1px solid var(--altermateButtonBorderColorHover);
+}
+.button_altermate:disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.button__text{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--buttonTextColor);
+}
+
+.button__text_altermate{
+    color: var(--buttonTextAltermateColor);
+}

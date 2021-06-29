@@ -2,10 +2,59 @@
 <!-- Страница с кнопкой -->
 <html lang="ru">
     <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="../../assets/css/NormalizePropertyDefault/normalize.css">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./button.css">
+        <link rel="stylesheet" href="./buttonGrid.css">
+        <title>Buttons</title>
     </head>
     <body>
+        <div class="buttonGrid">
+            <p class="button__lable">Buttons</p>
+            <ul class="button__list">
+                <li class="button__listItem button__listItem_default">
+                    <button class='button button_primary button__text' type="button">
+                        Primary
+                    </button>
+        
+                    <button class='button button_secondary button__text' type="button">
+                        Secondary
+                    </button>
+        
+                    <button class='button button_altermate button__text button__text_altermate' type="button">
+                        Altermate
+                    </button>
+                </li>
 
+                <li class="button__listItem button__listItem_hover">
+                    <button class='button button_primary button__text' type="button">
+                        Primary
+                    </button>
+        
+                    <button class='button button_secondary button__text' type="button">
+                        Secondary
+                    </button>
+        
+                    <button class='button button_altermate button__text button__text_altermate' type="button">
+                        Altermate
+                    </button>
+                </li>
+
+                <li class="button__listItem button__listItem_disabled">
+                    <button class='button button_primary button__text' type="button" disabled>
+                        Primary
+                    </button>
+        
+                    <button class='button button_secondary button__text' type="button" disabled>
+                        Secondary
+                    </button>
+        
+                    <button class='button button_altermate button__text button__text_altermate' type="button" disabled>
+                        Altermate
+                    </button>
+                </li>
+            </ul>
+        </div>
     </body>
 </html>
