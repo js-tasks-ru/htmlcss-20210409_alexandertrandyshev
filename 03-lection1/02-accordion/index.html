@@ -2,17 +2,60 @@
 <!-- Страница с аккордеоном -->
 <html lang="ru">
     <head>
+        <link rel="stylesheet" href="../../assets/css/NormalizePropertyDefault/normalize.css">
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="./accordionGrid.css">
         <link rel="stylesheet" href="./accordion.css">
     </head>
     <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
+        <div class="accordion__grid">
+            <div class="accordion__gridItem accordion__gridItemLable">
+                <p class="accordion__lable">Accordion</p>
+            </div>
+            <div class="accordion__gridItem">
+                <details class="accordion">
+                    <summary class="accordion__summary">
+                        Accordion item 1
+                        <svg class="accordion__vector" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </summary>
+                    <div class="accordion__wrapper">
+                        <p class="accordion__text">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="accordion">
+                    <summary class="accordion__summary">
+                        Accordion item 2
+                        <svg class="accordion__vector" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </summary>
+                    <div class="accordion__wrapper">
+                        <p class="accordion__text">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="accordion">
+                    <summary class="accordion__summary">
+                        Accordion item 3
+                        <svg class="accordion__vector" viewBox="0 0 18 10" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </summary>
+                    <div class="accordion__wrapper">
+                        <p class="accordion__text">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
     </body>
 </html>

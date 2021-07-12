@@ -2,10 +2,76 @@
 <!-- Страница с кнопкой -->
 <html lang="ru">
     <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="../../assets/css/NormalizePropertyDefault/normalize.css">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./button.css">
+        <title>Buttons</title>
     </head>
     <body>
+        <div class="button">
+            <p class="button__lable">Buttons</p>
+            <ul class="button__list">
+                <li class="button__listItem button__listItemDefault">
+                    <button class='button__primary' type="button">
+                        <span class="button__primaryText">
+                            Primary
+                        </span>
+                    </button>
+        
+                    <button class='button__secondary' type="button">
+                        <span class="button__secondaryText">
+                            Secondary
+                        </span>
+                    </button>
+        
+                    <button class='button__altermate' type="button">
+                        <span class="button__altermateText">
+                            Altermate
+                        </span>
+                    </button>
+                </li>
 
+                <li class="button__listItem button__listItemHover">
+                    <button class='button__primary button__primary_hover' type="button">
+                        <span class="button__primaryText">
+                            Primary
+                        </span>
+                    </button>
+        
+                    <button class='button__secondary button__secondary_hover' type="button">
+                        <span class="button__secondaryText">
+                            Secondary
+                        </span>
+                    </button>
+        
+                    <button class='button__altermate button__altermate_hover' type="button">
+                        <span class="button__altermateText">
+                            Altermate
+                        </span>
+                    </button>
+                </li>
+
+                <li class="button__listItem button__listItemDisabled">
+                    <button class='button__primary button__primary_disabled' type="button" disabled>
+                        <span class="button__primaryText">
+                            Primary
+                        </span>
+                    </button>
+        
+                    <button class='button__secondary button__secondary_disabled' type="button" disabled>
+                        <span class="button__secondaryText">
+                            Secondary
+                        </span>
+                    </button>
+        
+                    <button class='button__altermate button__altermate_disabled' type="button" disabled>
+                        <span class="button__altermateText">
+                            Altermate
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </body>
 </html>
